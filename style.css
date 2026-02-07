@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #ffdae9;
+    /* Rosa pastel suave */
     background-image:
         radial-gradient(#ffffff 2px, transparent 2px),
         radial-gradient(#ffffff 1px, transparent 1px);
@@ -147,12 +148,39 @@ p {
     cursor: default;
 }
 
-.final-text {
-    font-size: 22px;
-    line-height: 1.4;
-    text-align: center;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: rgba(255, 240, 240, 0.5);
-    border-radius: 12px;
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .cat {
+        width: 120px;
+    }
+
+    .btn {
+        width: 80px;
+    }
+
+    .yes-btn,
+    .no-btn {
+        width: 80px;
+    }
+
+    .letter-window {
+        padding-top: 100px;
+    }
+
+    .final-text {
+        font-size: 16px;
+        padding: 0px 20px;
+        margin-top: -20px;
+    }
+
+    .letter-window.final .cat {
+        width: 120px;
+    }
 }
